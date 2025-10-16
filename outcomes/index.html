@@ -1,54 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Evergreen Systems</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="icon" href="/favicon.ico">
-        <link href="../bootstrap-5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="./index.css" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Outcomes - Evergreen Systems</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.ico">
 
-    <body class="bg-light">
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap-5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Header + Navigation -->
-        <header class="border-bottom bg-white mb-4">
-            <nav class="navbar navbar-expand-md navbar-light container py-0">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="/">
-                    <img class="d-flex" src="/images/logo.webp" id="team-logo" alt="Evergreen Systems Logo" style="height:48px;">
-                    <span class="h6 mb-0 fw-normal">
-                        <div>Evergreen Systems</div>
-                        <div>Generous ecommerce connectors</div>
-                    </span>
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto px-2">
-                        <li class="nav-item"><a class="nav-link py-3" href="/about-us">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="/goals">Goals</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="/outcomes">Outcomes</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="/archive">Archive</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <!-- Project-specific styles -->
+    <link href="index.css" rel="stylesheet">
+  </head>
 
-        <main class="container pb-5">
+  <body class="bg-light">
 
-            <h1 class="h1 text-center mb-3">Page Title</h1>
+    <!-- ================================================================
+         HEADER + NAVIGATION
+         ----------------------------------------------------------------
+         Includes Evergreen Systems logo, description, and navigation
+         links to site sections: About Us, Goals, Outcomes, Archive.
+         ================================================================= -->
+    <header class="border-bottom bg-white mb-4">
+      <nav class="navbar navbar-expand-md navbar-light container py-0">
 
-            <!-- Divide content into sections / rows -->
-            <section class="row">
-                <!-- Divide sections into cards-->
-                <div class="card p-3 align-items-center">
-                    <p class="m-0">example content</p>
-                </div>
-            </section>
+        <!-- Brand: logo + text -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../">
+          <img class="d-flex" src="../images/logo.webp"
+               id="team-logo" alt="Evergreen Systems Logo"
+               style="height:48px;">
+          <span class="h6 mb-0 fw-normal">
+            <div>Evergreen Systems</div>
+            <div>Generous ecommerce connectors</div>
+          </span>
+        </a>
 
-        </main>
+        <!-- Mobile navbar toggle button -->
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <script src="../bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto px-2">
+            <li class="nav-item">
+              <a class="nav-link" href="../about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../goals">Goals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../outcomes">Outcomes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- ================================================================
+         MAIN CONTENT AREA
+         ----------------------------------------------------------------
+         Contains the Outcomes page title and project-specific sections.
+         Each section is inside a Bootstrap card for consistent spacing.
+         ================================================================= -->
+    <main class="container pb-5">
+
+      <!-- Page title -->
+      <h1 class="h1 text-center mb-4">Outcomes</h1>
+
+      <!-- Card container for all content -->
+      <section class="row">
+        <div class="card p-4">
+
+          <!-- ----------------------------------------------------------
+               SECTION: Envisioned Solution
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Envisioned Solution</h2>
+            <p>
+              The Generous project involves building an SDK and platform-specific
+              connectors (Shopify, Salesforce, Zapier, Feedonomics) to integrate
+              product catalogs and orders using ChatGPT’s product feed spec.
+              Detailed architecture and screenshots to be added.
+            </p>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Technologies
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Technologies</h2>
+            <p>
+              Technologies are still being decided.
+            </p>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Schedule, Resources, and Budget
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Schedule, Resources, and Budget</h2>
+
+            <p>
+              The project follows a structured timeline to deliver ecommerce connectors for Generous.
+            </p>
+
+            <!-- Table for milestone tracking -->
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Milestone</th>
+                  <th>Timeline</th>
+                  <th>Resources</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Research ChatGPT product feed spec and Shopify integration
+                  </td>
+                  <td>Oct 6 - TBD </td>
+                  <td>Content to be added</td>
+                  <td>Status: TBD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Next idea to be planned.
+                  </td>
+                  <td>TBD</td>
+                  <td>Content to be added</td>
+                  <td>Status: TBD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Next idea to be planned.
+                  </td>
+                  <td>TBD</td>
+                  <td>Content to be added</td>
+                  <td>Status: TBD</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              <strong>Progress:</strong> On track as of October 6, 2025.
+              Weekly sponsor meetings via Google Meet. Budget: $0,
+              using free tools and sponsor resources.
+            </p>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Codebase & Demo
+               ---------------------------------------------------------- -->
+          <div>
+            <h2>Codebase & Demo</h2>
+            <p>
+              The codebase will be archived as a zip file. Demo screenshots
+              will showcase key use cases, such as catalog integration and
+              order posting.
+            </p>
+          </div>
+
+        </div> <!-- End of card -->
+      </section> <!-- End of content section -->
+
+    </main>
+
+    <!-- ================================================================
+         SCRIPTS
+         ----------------------------------------------------------------
+         Loads Bootstrap JS bundle for collapsible navigation functionality.
+         ================================================================= -->
+    <script src="../bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
