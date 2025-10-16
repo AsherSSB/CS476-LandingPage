@@ -72,6 +72,15 @@ body {
     width: 80%;
 }
 
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
 /* ================================================================
    CARDS & COMPONENTS
    ================================================================= */
@@ -94,112 +103,72 @@ body {
 }
 
 /* ================================================================
-   TEAM MEMBER CARDS
+   DOWNLOAD LINKS - CUSTOM STYLING
    ================================================================= */
 
-.headshot {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--primary-color);
-    background: var(--gradient-light);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(33, 161, 127, 0.2);
-}
-
-.headshot:hover {
-    transform: scale(1.05);
-    border-color: var(--accent-color);
-    box-shadow: 0 6px 25px rgba(33, 161, 127, 0.3);
-}
-
-/* ================================================================
-   SPONSOR CARDS
-   ================================================================= */
-
-.sponsor-shot {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    border-radius: 16px;
-    background: var(--gradient-light);
-    border: 3px solid var(--secondary-color);
-    padding: 12px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(134, 196, 182, 0.2);
-}
-
-.sponsor-shot:hover {
-    transform: scale(1.05);
-    border-color: var(--primary-color);
-    box-shadow: 0 6px 25px rgba(33, 161, 127, 0.25);
-}
-
-/* ================================================================
-   BUTTONS
-   ================================================================= */
-
-.btn-primary {
-    background: var(--gradient-primary) !important;
-    border: none !important;
-    border-radius: 12px !important;
-    padding: 12px 24px !important;
-    font-weight: 600 !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(33, 161, 127, 0.3) !important;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(33, 161, 127, 0.4) !important;
-    background: linear-gradient(135deg, #1a8a6b 0%, #6bb3a3 100%) !important;
-}
-
-.btn-success {
-    background: var(--gradient-primary) !important;
-    border: none !important;
-    border-radius: 12px !important;
-    padding: 12px 24px !important;
-    font-weight: 600 !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(33, 161, 127, 0.3) !important;
-}
-
-.btn-success:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(33, 161, 127, 0.4) !important;
-    background: linear-gradient(135deg, #1a8a6b 0%, #6bb3a3 100%) !important;
-}
-
-.btn-outline-success {
+.list-group-item a {
     color: var(--primary-color) !important;
-    border: 2px solid var(--primary-color) !important;
-    border-radius: 12px !important;
-    padding: 10px 22px !important;
     font-weight: 600 !important;
     transition: all 0.3s ease !important;
+    position: relative !important;
+    text-decoration: none !important;
 }
 
-.btn-outline-success:hover {
-    background: var(--gradient-primary) !important;
-    border-color: var(--primary-color) !important;
-    color: white !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(33, 161, 127, 0.3) !important;
+.list-group-item a:hover {
+    color: var(--accent-color) !important;
+    transform: translateX(5px) !important;
+    text-decoration: none !important;
+}
+
+.list-group-item a::after {
+    content: ' 📥';
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin-left: 8px;
+}
+
+.list-group-item a:hover::after {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Alternative download icon using CSS */
+.list-group-item a::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: var(--gradient-primary);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'/%3E%3C/svg%3E");
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'/%3E%3C/svg%3E");
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item a:hover::before {
+    transform: scale(1.2) rotate(5deg);
 }
 
 /* ================================================================
-   ALERTS
+   LIST GROUPS
    ================================================================= */
 
-.alert-warning {
-    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%) !important;
-    border: 2px solid #f39c12 !important;
+.list-group-item {
+    border: none !important;
     border-radius: 12px !important;
-    color: #8b4513 !important;
-    font-weight: 600 !important;
-    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.2) !important;
+    margin-bottom: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(33, 161, 127, 0.08) !important;
+    padding: 1.5rem !important;
+}
+
+.list-group-item:hover {
+    transform: translateX(5px) !important;
+    box-shadow: 0 4px 20px rgba(33, 161, 127, 0.15) !important;
+    background: var(--light-teal) !important;
 }
 
 /* ================================================================
@@ -226,64 +195,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ================================================================
-   SECTIONS
-   ================================================================= */
-
-section {
-    margin-bottom: 3rem !important;
-}
-
-/* ================================================================
    BACKGROUNDS
    ================================================================= */
 
 .bg-light {
     background: var(--gradient-light) !important;
-}
-
-/* ================================================================
-   TABLES
-   ================================================================= */
-
-.table {
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    box-shadow: 0 4px 15px rgba(33, 161, 127, 0.1) !important;
-}
-
-.table thead th {
-    background: var(--gradient-primary) !important;
-    color: white !important;
-    border: none !important;
-    font-weight: 600 !important;
-    padding: 1rem !important;
-}
-
-.table tbody tr {
-    transition: all 0.3s ease !important;
-}
-
-.table tbody tr:hover {
-    background: var(--light-teal) !important;
-    transform: scale(1.01) !important;
-}
-
-/* ================================================================
-   LIST GROUPS
-   ================================================================= */
-
-.list-group-item {
-    border: none !important;
-    border-radius: 12px !important;
-    margin-bottom: 0.5rem !important;
-    transition: all 0.3s ease !important;
-    background: white !important;
-    box-shadow: 0 2px 10px rgba(33, 161, 127, 0.08) !important;
-}
-
-.list-group-item:hover {
-    transform: translateX(5px) !important;
-    box-shadow: 0 4px 20px rgba(33, 161, 127, 0.15) !important;
 }
 
 /* ================================================================
@@ -295,14 +211,8 @@ section {
         padding: 1.5rem !important;
     }
     
-    .headshot {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .sponsor-shot {
-        width: 150px;
-        height: 150px;
+    .list-group-item {
+        padding: 1rem !important;
     }
 }
 
@@ -321,7 +231,7 @@ section {
     }
 }
 
-.card {
+.card, .list-group-item {
     animation: fadeInUp 0.6s ease-out;
 }
 
