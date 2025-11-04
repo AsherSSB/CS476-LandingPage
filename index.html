@@ -1,147 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Evergreen Systems</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="icon" href="favicon.ico">
-        <link href="bootstrap-5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Outcomes - Evergreen Systems</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../favicon.ico">
 
-    <body class="bg-light">
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap-5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Header + Navigation -->
-        <header class="border-bottom bg-white mb-4">
-            <nav class="navbar navbar-expand-md navbar-light container py-0">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="./">
-                    <img class="d-flex" src="images/logo.webp" id="team-logo" alt="Evergreen Systems Logo" style="height:48px;">
-                    <span class="h6 mb-0 fw-normal">
-                        <div>Evergreen Systems</div>
-                        <div>Generous ecommerce connectors</div>
-                    </span>
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto px-2">
-                        <li class="nav-item"><a class="nav-link py-3" href="about-us/index.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="goals/index.html">Goals</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="outcomes/index.html">Outcomes</a></li>
-                        <li class="nav-item"><a class="nav-link py-3" href="archive/index.html">Archive</a></li>
-                    </ul>
+    <!-- Project-specific styles -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <!-- ================================================================
+         HEADER + NAVIGATION
+         ----------------------------------------------------------------
+         Includes Evergreen Systems logo, description, and navigation
+         links to site sections: About Us, Goals, Outcomes, Archive.
+         ================================================================= -->
+    <header class="border-bottom bg-white mb-4">
+      <nav class="navbar navbar-expand-md navbar-light container py-0">
+
+        <!-- Brand: logo + text -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../">
+          <img class="d-flex" src="../images/logo.webp"
+               id="team-logo" alt="Evergreen Systems Logo"
+               style="height:48px;">
+          <span class="h6 mb-0 fw-normal">
+            <div>Evergreen Systems</div>
+            <div>Generous ecommerce connectors</div>
+          </span>
+        </a>
+
+        <!-- Mobile navbar toggle button -->
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto px-2">
+            <li class="nav-item">
+              <a class="nav-link" href="../about-us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../goals">Goals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../outcomes">Outcomes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../archive">Archive</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- ================================================================
+         MAIN CONTENT AREA
+         ----------------------------------------------------------------
+         Contains the Outcomes page title and project-specific sections.
+         Each section is inside a Bootstrap card for consistent spacing.
+         ================================================================= -->
+    <main class="container pb-5">
+
+      <!-- Page title -->
+      <h1 class="h1 text-center mb-4">Outcomes</h1>
+
+      <!-- Card container for all content -->
+      <section class="row">
+        <div class="card p-4">
+
+          <!-- ----------------------------------------------------------
+               SECTION: Envisioned Solution
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Envisioned Solution</h2>
+            <p>
+              The Generous project involves building an SDK and platform-specific
+              connectors (Shopify, Salesforce, Zapier, Feedonomics) to integrate
+              product catalogs and orders using ChatGPT’s product feed spec.
+              Detailed architecture and screenshots to be added.
+            </p>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Technologies
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Technologies</h2>
+            <p class="lead">
+              Our project utilizes a modern full-stack JavaScript framework and database tools
+              to create efficient, scalable, and maintainable applications.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+
+              <!-- Next.js -->
+              <div class="col">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="../images/nextjs-placeholder.png" alt="Next.js logo"
+                      style="width:64px; height:64px; object-fit:contain;">
+                  <div>
+                    <h5 class="mb-1">Next.js</h5>
+                    <p class="mb-0">
+                      A React-based framework that supports server-side rendering and static site generation,
+                      improving performance and SEO for web applications.
+                    </p>
+                  </div>
                 </div>
-            </nav>
-        </header>
+              </div>
 
-        <main class="container pb-5">
-
-            <!-- Sponsor -->
-            <section class="mb-5">
-
-                <!-- Generous -->
-                <h2 class="h4 text-center mb-4">Sponsored By</h2>
-                <div class="row justify-content-between">
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body d-flex flex-column flex-md-row align-items-center gap-4">
-                                <img src="images/generous.png" alt="Generous Logo" class="sponsor-shot">
-                                <div>
-                                    <h3 class="h5 mb-1">Generous</h3>
-                                    <p class="mb-1"><a class="text-decoration-none text-muted" href="https://meetgenerous.com/">meetgenerous.com</a></p>
-                                    <p class="small mb-0">Automate your gift giving and never miss an important occasion again. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kyle -->
-                    <div class="col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body d-flex flex-column flex-md-row align-items-center gap-4">
-                                <img src="images/kyle.jpg" alt="Generous Sponsor Logo" class="sponsor-shot">
-                                <div>
-                                    <h3 class="h5 mb-1">Kyle Montgomery</h3>
-                                    <p class="mb-2 text-muted">CEO & Co-Founder of Generous</p>
-                                    <p class="small mb-0">Digital and technology commerce executive with a passion for people, innovation, and customer results</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <!-- React -->
+              <div class="col">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="../images/react-placeholder.png" alt="React logo"
+                      style="width:64px; height:64px; object-fit:contain;">
+                  <div>
+                    <h5 class="mb-1">React</h5>
+                    <p class="mb-0">
+                      A JavaScript library for building user interfaces using reusable components,
+                      allowing a modular and dynamic frontend experience.
+                    </p>
+                  </div>
                 </div>
-            </section>
-            
-            <!-- Team + Mentor -->
-            <section class="mb-5">
-                <div class="row g-5 align-items-start">
-                    
-                    <!-- Team -->
-                    <div class="col-lg-9">
-                        <h2 class="h4 text-center mb-4">Team Members</h2>
-                        <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+              </div>
 
-                            <div class="col">
-                                <div class="card shadow-sm text-center p-3">
-                                    <img src="images/melvin.jpg" alt="Headshot of Melvin Agram" class="headshot mx-auto mb-3">
-                                    <h3 class="h6 mb-1">Melvin Agram</h3>
-                                    <p class="small text-muted mb-2">Recorder & UX Lead</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card shadow-sm text-center p-3">
-                                    <img src="images/mark.jpg" alt="Headshot of Mark Johnson" class="headshot mx-auto mb-3">
-                                    <h3 class="h6 mb-1">Mark Johnson</h3>
-                                    <p class="small text-muted mb-2">Release Manager</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card shadow-sm text-center p-3">
-                                    <img src="images/asher.jpg" alt="Headshot of Asher Romanenghi" class="headshot mx-auto mb-3">
-                                    <h3 class="h6 mb-1">Asher Romanenghi</h3>
-                                    <p class="small text-muted mb-2">Team Lead</p>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card shadow-sm text-center p-3">
-                                    <img src="images/tyler.jpg" alt="Headshot of Tyler Sturm" class="headshot mx-auto mb-3">
-                                    <h3 class="h6 mb-1">Tyler Sturm</h3>
-                                    <p class="small text-muted mb-2">Repo & Test Lead</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Mentor -->
-                    <div class="col-lg-3">
-                        <h4 class="h4 text-center mb-4">Mentored By</h4>
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body d-flex flex-column flex-md-row flex-lg-column align-items-center gap-4 text-center">
-                                <img src="images/nazmul.jpg" alt="Headshot of Nazmul Hossain" class="headshot">
-                                <div>
-                                    <h3 class="text-center h6 mb-1">Nazmul Hossain</h3>
-                                    <p class="text-center small text-muted mb-0">Project Mentor</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+              <!-- TypeScript -->
+              <div class="col">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="../images/typescript-placeholder.png" alt="TypeScript logo"
+                      style="width:64px; height:64px; object-fit:contain;">
+                  <div>
+                    <h5 class="mb-1">TypeScript</h5>
+                    <p class="mb-0">
+                      A strongly typed superset of JavaScript that adds static typing and modern
+                      tooling for more reliable and maintainable codebases.
+                    </p>
+                  </div>
                 </div>
-            </section>
+              </div>
 
-            <!-- WIP -->
-            <section class="text-center">
-                <div class="alert alert-warning d-inline-flex align-items-center">
-                    <span class="fw-semibold">Website Under Construction</span>
+              <!-- MongoDB -->
+              <div class="col">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="../images/mongodb-placeholder.png" alt="MongoDB logo"
+                      style="width:64px; height:64px; object-fit:contain;">
+                  <div>
+                    <h5 class="mb-1">MongoDB</h5>
+                    <p class="mb-0">
+                      A NoSQL database that stores data in flexible, JSON-like documents,
+                      ideal for applications requiring scalability and quick data access.
+                    </p>
+                  </div>
                 </div>
-            </section>
+              </div>
 
-        </main>
+              <!-- Mongoose -->
+              <div class="col">
+                <div class="d-flex align-items-start gap-3">
+                  <img src="../images/mongoose-placeholder.png" alt="Mongoose logo"
+                      style="width:64px; height:64px; object-fit:contain;">
+                  <div>
+                    <h5 class="mb-1">Mongoose</h5>
+                    <p class="mb-0">
+                      An elegant MongoDB object modeling library for Node.js that simplifies schema
+                      definitions, validation, and data interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-        <script src="bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+            </div>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Schedule, Resources, and Budget
+               ---------------------------------------------------------- -->
+          <div class="mb-4">
+            <h2>Schedule, Resources, and Budget</h2>
+
+            <p>
+              The project follows a structured timeline to deliver ecommerce connectors for Generous.
+            </p>
+
+            <!-- Table for milestone tracking -->
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Milestone</th>
+                  <th>Timeline</th>
+                  <th>Resources</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Research ChatGPT product feed spec and Shopify integration
+                  </td>
+                  <td>Oct 6 - TBD </td>
+                  <td>Content to be added</td>
+                  <td>Status: TBD</td>
+                </tr>
+                <tr>
+                  <td>
+                    Engineering Fest Poster Presentation
+                  </td>
+                  <td>November 21, 2025</td>
+                  <td>Content to be added</td>
+                  <td>Status: In Production</td>
+                </tr>
+                <tr>
+                  <td>
+                    Prototype Completion
+                  </td>
+                  <td>November 21, 2025</td>
+                  <td>Content to be added</td>
+                  <td>Status: In Production</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              <strong>Progress:</strong> On track as of October 6, 2025.
+              Weekly sponsor meetings via Google Meet. Budget: $0,
+              using free tools and sponsor resources.
+            </p>
+          </div>
+
+          <!-- ----------------------------------------------------------
+               SECTION: Codebase & Demo
+               ---------------------------------------------------------- -->
+          <div>
+            <h2>Codebase & Demo</h2>
+            <p>
+              The codebase will be archived as a zip file. Demo screenshots
+              will showcase key use cases, such as catalog integration and
+              order posting.
+            </p>
+          </div>
+
+        </div> <!-- End of card -->
+      </section> <!-- End of content section -->
+
+    </main>
+
+    <!-- ================================================================
+         SCRIPTS
+         ----------------------------------------------------------------
+         Loads Bootstrap JS bundle for collapsible navigation functionality.
+         ================================================================= -->
+    <script src="../bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
